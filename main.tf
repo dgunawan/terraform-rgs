@@ -19,5 +19,5 @@ resource "azurerm_resource_group" "rg" {
 
     name      = each.key
     location  = each.value.location
-    tags      = lookup(each.value,"tags",null) == null ? var.global_tags : merge(var.global_tags,each.value.tags)
+    tags      = each.value.tags
 }

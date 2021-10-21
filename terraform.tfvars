@@ -22,4 +22,13 @@ resource_groups = {
     tags       = {
       CostCode="hello"} 
     } 
+
+  rg-test2 = {
+    location="eastus",
+    tags={
+        CostCode="12",
+        Name="test2"
+      }
+    }
+
 }
