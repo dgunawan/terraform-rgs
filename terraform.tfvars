@@ -16,4 +16,10 @@ resource_groups = {
     location="australiaeast",
     tags={}
     }
+
+  my-linux-rg = {
+    location   = "australiasoutheast",
+    tags       = {
+      CostCode="hello"} 
+    } 
 }
